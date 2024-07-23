@@ -7,8 +7,9 @@ const (
 	EOF     TokenType = "EOF"
 
 	// Identifiers + literals
-	IDENT TokenType = "IDENT" // add, foobar, x, y, ...
-	INT   TokenType = "INT"   // 1343456
+	IDENT  TokenType = "IDENT"  // add, foobar, x, y, ...
+	INT    TokenType = "INT"    // 1343456
+	STRING TokenType = "STRING" // "foobar"
 
 	// Operators
 	ASSIGN   TokenType = "="
@@ -27,11 +28,14 @@ const (
 	// Delimiters
 	COMMA     TokenType = ","
 	SEMICOLON TokenType = ";"
+	COLON     TokenType = ":"
 
-	LPAREN TokenType = "("
-	RPAREN TokenType = ")"
-	LBRACE TokenType = "{"
-	RBRACE TokenType = "}"
+	LPAREN   TokenType = "("
+	RPAREN   TokenType = ")"
+	LBRACE   TokenType = "{"
+	RBRACE   TokenType = "}"
+	LBRACKET TokenType = "["
+	RBRACKET TokenType = "]"
 
 	// Keywords
 	FUNCTION TokenType = "FUNCTION"
